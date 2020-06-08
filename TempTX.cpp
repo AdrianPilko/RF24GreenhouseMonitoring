@@ -32,7 +32,7 @@ void initRadio()
   radio = new RF24(7, 8); // CE, CSN
 
   radio->begin();
-  radio->setPALevel(RF24_PA_HIGH);
+  radio->setPALevel(RF24_PA_MAX);
   radio->setDataRate(RF24_250KBPS);
   //radio->setCRCLength(RF24_CRC_8);
   //radio->setAddressWidth(3);
