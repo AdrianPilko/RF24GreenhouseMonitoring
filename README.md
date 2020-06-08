@@ -20,11 +20,11 @@ Arduino Uno x 2
 DHT22 (AM2302) Temperature/Humidity Sensor 
 Soil Hygrometer Moisture Sensor
 sandwich box to store the transmitter and other parts and ideally be sealed to IP68 or better.
+added a 22uF electrolytic cap accross power and ground of the RF24 (then set the power to RF24_PA_MAX) on the TX side. now no packets lost even through internal house walls.
 
 Known Issues
 ============
-1) Some issues with the transmitter strength, many say a 10uF electrolytic cap accross the GND and VCC pins can help. I tried to keep the power level low on the TX and only send every 30seconds
-2) Problems with the calibration of the soild moisture sensor, ie no auto calibration
-3) Would be good to have some indication of the state locally to the TX'er, such as an oled display
-4) Power drain needs to be monitored and minimised, since will run of either a solar panel and or a phone backup battery bank
-5) no retry or two way hand shaking, just fire and forget on the TX side. Have seen ranges in testing through 3 or 4 internal house walls from ground level to 1st floor, but with a droppout of approximately 1 in 4 packets. 
+1) Problems with the calibration of the soild moisture sensor, ie no auto calibration
+2) Would be good to have some indication of the state locally to the TX'er, such as an oled display
+3) Power drain needs to be monitored and minimised, since will run of either a solar panel and or a phone backup battery bank
+4) no retry or two way hand shaking, just fire and forget on the TX side. Have seen ranges in testing through 3 or 4 internal house walls from ground level to 1st floor, but with a droppout of approximately 1 in 4 packets. 
