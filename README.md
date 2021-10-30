@@ -1,5 +1,5 @@
 # RF24GreenhouseMonitoring
-This is an arduino project to build single node wireless greenhouse monitoring. Its based on RF24 2.4GHz trancievers. We needed a way of making sure the tomatoes got the optimal quantity of water, based on several variable: temperature, humidity, and soil moisture. We had seen the 
+This is an arduino project to build single node wireless greenhouse monitoring. Its based on RF24 2.4GHz trancievers. We needed a way of making sure the tomatoes got the optimal quantity of water, based on several variable: temperature, humidity, and soil moisture. We had seen the leaves wilt and go burnt looking on edges so need a tech solution.
 
 Currently supported sensors
 ===========================
